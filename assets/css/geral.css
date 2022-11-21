@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .1rem;
+}
+
+html{
+    font-size: 65.6%;
+    background: #e2dddd;
+}
+
+.main{
+    display: flex;
+    padding: 2rem 9%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+    min-height: 100vh;
+    background: url(../img/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position:  center;
+}
+
+.content{
+    width: 400px;
+    height: 300px;
+    padding: 2rem;
+    background: #ff612252;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -2px 7px 8px 5px #0000005d;
+}
+
+.description{
+    text-align: center;
+    padding: 14px;
+}
+.description h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.description p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form{
+    width: 400px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: -2px 7px 8px 5px #0000005d;
+    border-radius: .8rem;
+    background: #ff612252;
+
+}
+
+.input-control{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 2rem;
+    border: 1px solid #e7e5e5;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.input-control input{
+    width: 100%;
+    height: 100%;
+   background: transparent;
+   padding-left: 7px;
+   color: #fff;
+   letter-spacing: .2rem;
+}
+.input-control input::placeholder{
+    color: #fff;
+    font-weight: 500;
+}
+
+.input-control i{
+    font-size: 2rem;
+    padding: 4px;
+    cursor: pointer;
+   
+}
+
+.input-button{
+    text-align: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+.input-button input{
+    padding: 10px 19px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: #0968b6da;
+    border-radius: .3rem;
+    color: #fff;
+    display: inline-block; 
+}
+.input-button input:hover{
+    background: transparent;
+    border: 2px solid #0968b6da;
+    color: #0968b6da;
+    
+}
+.esqueceu, .criar{
+    padding: 3px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.esqueceu:hover,.criar:hover{
+  
+    color: #0968b6da;
+}
+
+.hr{
+    width: 100%;
+    height: 1px;
+    background: #e6e6e6;
+    margin: 2rem 0;
+}
+
+@media (max-width: 991px) {
+    html{
+        font-size: 55.5%;
+    }  
+    .main{
+        padding: 0 4rem;
+  
+    }
+}
+
+@media (max-width: 820px) {
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+       
+    }
+    .content{
+        width: 100%;
+        height: 110px;
+        padding: 2rem;
+        border-radius: .5rem;
+        border: none;
+        margin-bottom: 2rem;
+    }
+    form{
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 414px) {
+    html{
+        font-size: 50%;
+    }
+     .description h1{
+        font-size: 3rem;
+       
+    }
+    
+}
+
+
+@media (max-width: 300px) {
+    html{
+        font-size: 47%;
+    } 
+}
